@@ -1,3 +1,8 @@
+provider "aws" {
+   shared_credentials_file = "C:/Users/user/.aws/credentials"
+   region     = "us-east-1"
+}
+
 module "using" {
   source = "../vpc and subnet"
   
