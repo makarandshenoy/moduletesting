@@ -1,6 +1,7 @@
-data "aws_vpc" "myvpc" {
-  filter {
-      name = "tag:Name"
-      values = ["MakkuVPC"]
+
+resource "aws_vpc" "myvpc" {
+    cidr_block = "10.0.0.0/16"
+      tags = {
+    Name = "moduule testing again"
   }
-}
+  }

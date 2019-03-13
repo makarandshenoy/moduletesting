@@ -1,3 +1,3 @@
 output "myvpc" {
-  value = "${data.aws_vpc.myvpc.id}"
+  value = "${aws_vpc.myvpc.id}"
 }
