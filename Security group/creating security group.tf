@@ -1,14 +1,4 @@
-provider "aws" {
-   shared_credentials_file = "C:/Users/user/.aws/credentials"
-   region     = "us-east-1"
-}
-
-module "using" {
-  source = "../vpc and subnet"
-  
-}
-
-resource "aws_security_group" "createdwithmodule" {
+resource "aws_security_group" "createdwithmodule1" {
   name        = "createdwithmodule"
   description = "createdwithmodule"
   vpc_id      = "${module.using.myvpc}"
